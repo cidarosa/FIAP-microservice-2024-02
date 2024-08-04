@@ -78,9 +78,9 @@ INSERT INTO tb_pagamento(valor, nome, numero_do_cartao, validade, codigo_de_segu
 
 ***
 ### Swagger e OpenAPI 3.0
-#### Documentação de API com Swagger e OpenAPI 3.0 no Spring Boot com Java
+#### Documentação de API e Microsserviços com Swagger e OpenAPI 3.0
 
-##### Dependência Maven no poxm.xml
+##### Dependência Maven no pom.xml
 
 ```xml
 <dependency>
@@ -89,3 +89,6 @@ INSERT INTO tb_pagamento(valor, nome, numero_do_cartao, validade, codigo_de_segu
     <version>2.1.0</version>
 </dependency>
 ```
+
+Iniciar a aplicação e acessar no navegador:
+[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
