@@ -5,6 +5,24 @@ Material de apoio disciplina **MICROSERVICE AND WEB ENGINEERING** - FIAP - 2024/
 
 ***
 
+***
+### Problema com dependência no Maven
+#### pom.xml - Maven
+No arquivo `pom.xml` – caso tenha problemas, incluir o plugin conforme código abaixo: 
+
+```xml
+<!-- Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources
+(default-resources) on project application-etude: Input ength = 1 -->
+
+<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-resources-plugin</artifactId>
+	<version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->
+</plugin>
+```
+
+***
+
 ### Application properties
 #### Ambiente de Teste - DB H2
 
@@ -53,21 +71,7 @@ INSERT INTO tb_pagamento(valor, nome, numero_do_cartao, validade, codigo_de_segu
 ```
 
 
-***
-### Problema com dependência no Maven
-#### pom.xml - Maven
-No arquivo `pom.xml` – caso tenha problemas, incluir o plugin conforme código abaixo: 
 
-```xml
-<!-- Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources
-(default-resources) on project application-etude: Input ength = 1 -->
-
-<plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-resources-plugin</artifactId>
-	<version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->
-</plugin>
-```
 
 
 
